@@ -2,13 +2,14 @@ window.addEventListener("load", async () => {
   const tg = window.Telegram.WebApp;
   tg.expand();
 
-  alert(`Платформа: ${tg.platform}`);
-  
-
   const container = document.getElementById("container");
   container.style.overflow = "auto";
   container.style.height = "80vh";
   container.style.position = "absolute";
+
+  const test = document.createElement("p");
+  container.appendChild(test)
+  test.textContent = `Платформа: ${tg.platform}`;
 
   // const userDeviceArray = [
   //   { device: "ios", platform: /iPhone|iPad|Macintosh/ }, // Все Apple устройства
