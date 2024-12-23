@@ -445,16 +445,49 @@ body {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .container {
-    /* width: 95%; */
-  }
+#taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .spins-info {
-    font-size: 14px;
-  }
+/* Стили для карточек задач */
+.task-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-  #giftButton {
-    font-size: 14px;
-  }
+/* Название задачи */
+.task-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* Описание задачи */
+.task-card p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #dddddd;
+}
+
+/* Кнопка действия */
+.task-button {
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(45deg, #ff40d4, #cb11ab);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
 }
