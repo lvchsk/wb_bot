@@ -91,11 +91,11 @@ window.addEventListener('load', async () => {
     });
 
     function highlightActiveLink() {
-        const currentPath = window.location.pathname;
-        console.log(currentPath);
+        const currentPath = window.location.pathname.replace(/^\/Pages\/(.+)/, './$1');
+        // console.log(currentPath);
 
         const links = document.querySelectorAll(".menu a");
-        console.log(links[0].getAttribute("href"));
+        // console.log(links[0].getAttribute("href"));
 
         links.forEach((link) => {
             if (link.getAttribute("href") === currentPath) {

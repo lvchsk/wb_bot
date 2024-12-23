@@ -225,7 +225,7 @@ body {
 
 .invite,
 .free-spin {
-  width: 170px;
+  width: 165px;
   height: 70px;
   padding: 5px 15px 5px 15px;
 
@@ -241,7 +241,7 @@ body {
   margin: 0 0 5px 0;
 }
 
-.invite-btn {
+.invite-btn, .free-spin-btn {
   width: auto;
   height: 30px;
   padding: 5px 10px 5px 10px;
@@ -258,7 +258,7 @@ body {
 }
 
 .free-spin span {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .menu {
@@ -344,34 +344,34 @@ body {
   color: #ff40d4; /* Изменение цвета при наведении */
 }
 
-/* Стили для контейнера списка */
+/* 
 #taskList {
-  list-style-type: none; /* Убираем стандартные маркеры списка */
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 90%; /* Ограничиваем максимальную ширину */
-  margin: 0 auto; /* Выравниваем по центру */
-}
+  width: 90%; 
+  margin: 0 auto; 
+} */
 
-/* Стили для каждого элемента списка */
-.task {
-  display: flex; /* Используем flexbox для выравнивания */
-  justify-content: space-between; /* Разделяем текст и ссылку на противоположные стороны */
-  align-items: center; /* Выравниваем по вертикали */
-  padding: 15px; /* Добавляем отступы вокруг текста */
-  background-color: #202020; /* Светлый фон */
-  border: 1px solid gray; /* Легкая граница */
-  border-radius: 16px; /* Скругляем углы */
-  margin-bottom: 10px; /* Отступ снизу между элементами */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавный переход для фона и тени */
-}
 
-.task:hover {
-  background-color: #e0f7fa; /* Цвет фона при наведении */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
-}
+/* .task {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 15px; 
+  background-color: #202020;
+  border: 1px solid gray; 
+  border-radius: 16px; 
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+} */
 
-/* Стили для ссылок */
+/* .task:hover {
+  background-color: #e0f7fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+/* 
 .task a {
   height: 40px;
   line-height: 25px;
@@ -383,11 +383,11 @@ body {
   background-color: #ff40d4;
 }
 
-/* Стили для текста задачи */
+
 .task span {
-  font-size: 16px; /* Размер шрифта */
-  color: white; /* Цвет текста */
-}
+  font-size: 16px; 
+  color: white;
+} */
 
 .invite-link {
   width: 90%;
